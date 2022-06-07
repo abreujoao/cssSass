@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/arquivo.css">
+    
+    <title>Cursos</title>
 </head>
 <body>
-
-    <h1>
-
-        Sass
-
-    </h1>
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis explicabo, numquam fugit, quia perspiciatis maiores iste doloribus officiis quis non dolorem hic sint quo ut ducimus beatae nihil dolorum sed?</p>
+  
+  <div class = 'meuForm'></div>
+    <form name="meuForm">
     
-</body>
-</html>
+      <h1>FAÇA SEU LOGIN </h1>
+    
+      <input type="text" id="nomeid" placeholder="Digite o seu nome" required="required" name="nome" />
+      <label for="nome"></label>
+    
+      <input type="tel" id="foneid" placeholder="Digite o seu telefone" name="fone" />
+      <label for="fone"></label>
+    
+      <input type="email" id="emailid" placeholder="Digite o seu email" name="email" />
+      <label for="email"></label>
+
+      <input type="cidade" id="cidadeid" placeholder="Digite o nome da sua cidade" name="cidade" />
+      <label for="cidade"></label>
+    
+      <textarea placeholder="Deixe sua opnião sobre os nossos produtos..."></textarea>
+    
+      <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+    </form>
+    
+    
+    </body>
+    </html>

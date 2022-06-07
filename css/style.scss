@@ -1,8 +1,45 @@
 $cor:rgb(206, 92, 202);
 $cor2: rgb(93, 0, 93);
-$cor3: rgb(113, 113, 255);
+$cor3: rgb(119, 182, 139);
+$cor4: rgb(142, 255, 142);
+$cor5: red;
 
+@mixin bolinha ($color){
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $color;
+}
 body{
     background-color: $cor;
-    color:$cor2;
 }
+.p2{
+    color:$cor3;
+}
+.p1{
+    color:$cor4 ;
+}
+.teste{
+    @include bolinha(darken($cor,25%));
+}
+.teste2{
+    @include bolinha($cor4);
+}
+.teste3{
+    @include bolinha($cor3);
+}
+
+@for $i from 1 to 9 {
+    #{"#tipo" + $i}{
+        $var:$i - 1;
+        width:1200px;
+        height: 100px;
+        margin:0%;
+        background-color: darken($cor3, ($var*6%));
+        font-size: 9px +$i * 2.5;
+        color: lighten($cor4, ($var*4%));
+    }
+    
+}
+
+

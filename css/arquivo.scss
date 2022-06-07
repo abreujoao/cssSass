@@ -1,0 +1,83 @@
+$corFundoForm: #cda0e6;
+$backgroundFundo: #ba79d0;
+$cor1:#ffffff;
+$cor2:black;
+$cor3:#aaaad5;
+$cor4:#f9f9f9;
+$enviar:#843bbc;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lighten($backgroundFundo, 20%);
+
+
+}
+
+form {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: $corFundoForm;
+    max-width: 500px;
+    margin-left: 33%;
+    text-align: center;
+    margin-top: 6.75%;
+    border-radius: 3%;
+    height: 470px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: $cor1;
+    text-shadow: 5px 5px 5px $cor2;
+}
+
+input,
+textarea {
+    width: 200px;
+    padding: 10px;
+    color: $cor2;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: $cor3;
+    box-shadow: 5px 0px 9px $cor4;
+    background-color: $cor4;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    background-color: $enviar;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: $cor2;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: $cor4;
+    font-weight: bold;
+}
